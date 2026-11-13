@@ -1,0 +1,29 @@
+# git / CI (not needed inside the image)
+.git
+.github
+.gitignore
+
+# python junk
+**/__pycache__/
+*.pyc
+.venv/
+venv/
+
+# notebooks (not used by src/main.py)
+**/*.ipynb
+LLM/
+
+# frontend dev project (Vite/Tailwind, not used at runtime)
+html-dev/
+
+# old / unused files
+requirements_old.txt
+Dockerfile
+.dockerignore
+
+# secrets / local files
+.env
+*.md
+
+# NOTE: do NOT ignore Json/, HTML/, alerts_data/ or src/
+# the code expects these folders to exist at runtime.
